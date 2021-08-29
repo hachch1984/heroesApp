@@ -1,15 +1,12 @@
-import React, { useContext, useReducer } from "react";
+import React from "react";
 import { useHistory } from "react-router";
-import { AuthContext } from "../../auth/AuthContext";
-import { ActionType, authReducer, IState } from "../../auth/authReducer";
+ 
 
 export const LoginScreen = () => {
   const history = useHistory();
-
-const context = useContext(AuthContext)
+ 
 
   function handleLogin() {
-     
     history.replace({ pathname: "/" });
   }
 

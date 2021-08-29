@@ -1,10 +1,7 @@
-import React from "react";
-import { FC } from "react";
+import React, { FC } from "react";
 import { RouteComponentProps, useHistory, useParams } from "react-router-dom";
-import { getHeroById } from "../selectors/getHeroById";
-import * as QueryString from "query-string";
-import { HeroCard } from "./HeroCard";
 import { MarvelScreen_Url } from "../marvel/MarvelScreen";
+import { getHeroById } from "../selectors/getHeroById";
 
 export interface HeroScreenRouteParams {
   id: string;

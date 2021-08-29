@@ -24,9 +24,9 @@ export const SearchScreen = () => {
   };
   useEffect(() => {
     if (q) {
-      let str = String(q);
-      setText(str);
-      search(str);
+      
+      setText(String(q));
+      search(String(q));
     }
     return () => {};
   }, []);

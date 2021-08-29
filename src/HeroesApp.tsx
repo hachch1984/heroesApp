@@ -9,7 +9,7 @@ export const HeroesApp = () => {
     return JSON.parse(localStorage.getItem("user")!) || { logged: false,  name:'' };
   };
 
-  const [user, dispatch] = useReducer(authReducer, {} as IState, init);
+  const [user] = useReducer(authReducer, {} as IState, init);
 
   return (
     <div>

@@ -1,20 +1,8 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-  Redirect,
+  BrowserRouter as Router, Redirect, Route, Switch
 } from "react-router-dom";
-import { DcScreen, DcScreen_Url } from "../components/dc/DcScreen";
 import { LoginScreen, LoginScreen_Url } from "../components/login/LoginScreen";
-import {
-  MarvelScreen,
-  MarvelScreen_Url,
-} from "../components/marvel/MarvelScreen";
-import { NavBar } from "../components/ui/NavBar";
-import { HeroesApp, HeroesApp_Url } from "../HeroesApp";
 import { DashboardRoutes } from "./DashboardRoutes";
 
 export const AppRouter = () => {
@@ -28,13 +16,12 @@ export const AppRouter = () => {
               path={LoginScreen_Url}
               component={LoginScreen}
             />
-             <Route    path={'/'} component={DashboardRoutes} />
+            <Route path={"/"} component={DashboardRoutes} />
 
-             <Redirect to={LoginScreen_Url} />
+            <Redirect to={LoginScreen_Url} />
             {/*
           
 */}
-           
           </Switch>
         </div>
       </Router>

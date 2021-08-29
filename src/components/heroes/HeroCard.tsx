@@ -1,21 +1,12 @@
-import React, { FC, memo, useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React, { FC, memo, useState } from "react";
+import { Link } from "react-router-dom";
 import { IHero } from "../data/Heroes";
 import { HeroScreen_Url } from "./HeroScreen";
 
 export const HeroCard: FC<{ hero: IHero; indice: number }> = (props) => {
-  const [show, setShow] = useState(false);
-  const history = useHistory();
-  useEffect(() => {
-    const s = setTimeout(() => {
-      setShow(true);
-    }, props.indice * 20);
-
-    return () => {
-      clearTimeout(s);
-    };
-  }, []);
-  console.log("HeroCard hello id: " + props.hero.id);
+  const [show] = useState(false);
+    
+  
   return (
     <>
       {show && (

@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { HeroesApp_Url } from "../../HeroesApp";
 import { DcScreen_Url } from "../dc/DcScreen";
 import { LoginScreen_Url } from "../login/LoginScreen";
 import { MarvelScreen_Url } from "../marvel/MarvelScreen";
@@ -10,9 +9,7 @@ export const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-2">
-        <a className="navbar-brand" href={'#'}>
-          Heroes App
-        </a>
+        
 
         <div className="  navbar-collapse d-flex justify-content-between " id="navbarNav">
           <div className="navbar-nav  ">
