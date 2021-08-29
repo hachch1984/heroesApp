@@ -9,12 +9,7 @@ export const LoginScreen = () => {
 const context = useContext(AuthContext)
 
   function handleLogin() {
-    context.
-    dispatch({
-      type: ActionType.login,
-      payload: { name: "henry alberto", logged: true },
-    });
-
+     
     history.replace({ pathname: "/" });
   }
 
